@@ -1,0 +1,96 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion '29.0.3'
+    defaultConfig {
+        applicationId "tz.co.nyotaapps.naombakazi.naombakazi"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 2
+        versionName "2"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        useLibrary 'org.apache.http.legacy'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            lintOptions {
+                checkReleaseBuilds false
+                abortOnError false
+            }
+        }
+    }
+    packagingOptions {
+        pickFirst 'LICENSE-EDL-1.0.txt'
+        pickFirst 'LICENSE-EPL-1.0.txt'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url "https://maven.google.com"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'com.facebook.fresco:fresco:1.10.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    implementation 'com.google.firebase:firebase-messaging:20.1.7'
+    implementation 'com.google.firebase:firebase-ads:19.1.0'
+    implementation 'com.google.firebase:firebase-database:19.3.0'
+    annotationProcessor 'com.jakewharton:butterknife:6.1.0'
+    implementation 'com.jakewharton:butterknife:6.1.0'
+    implementation 'com.github.DavidBarbaran:FCM-AndroidToOtherDevice:1.0'
+    implementation 'org.apache.httpcomponents:httpmime:4.3.1'
+    implementation 'com.myhexaville:smart-image-picker:1.0.4'
+    implementation 'com.google.firebase:firebase-core:17.4.1'
+// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.7'
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.google.android.gms:play-services-ads:19.1.0'
+    implementation 'com.google.firebase:firebase-config:19.1.4'
+    // https://mvnrepository.com/artifact/org.jsoup/jsoup
+    implementation group: 'org.jsoup', name: 'jsoup', version: '1.11.3'
+    implementation 'net.rimoto:intlphoneinput:1.0.1'
+
+    //noinspection GradleDynamicVersion
+    implementation 'com.firebase:firebase-client-android:2.5.2+'
+    implementation 'com.android.volley:volley:1.1.1'
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+}
+apply plugin: 'com.google.gms.google-services'

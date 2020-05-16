@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Fundi</string>
+
+
+    <string name="dummy_content">Fundi</string>
+    <string name="title_activity_registereduser">registereduser</string>
+
+
+    <string name="notification_channel_id">124</string>
+
+    <string name="red">RED</string>
+    <string name="blue">BLUE</string>
+    <string name="green">GREEN</string>
+
+    <string name="youAreNotUpdatedTitle">App hii inahitaji update</string>
+    <string name="youAreNotUpdatedMessage">Version mpya ya App ipo! Download version  </string>
+    <string name="youAreNotUpdatedMessage1"> SASA..</string>
+    <string name="update">UPDATE</string>
+
+
+</resources>

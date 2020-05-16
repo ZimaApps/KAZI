@@ -1,0 +1,28 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/oop"
+        android:padding="@dimen/activity_vertical_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true">
+        <TextView
+            android:id="@+id/ujumbe"
+            android:text="hi man, how are you?"
+            android:background="@drawable/whiteround"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/grey_font"
+
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

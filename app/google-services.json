@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "497470277372",
+    "firebase_url": "https://naombakazi-ae374.firebaseio.com",
+    "project_id": "naombakazi-ae374",
+    "storage_bucket": "naombakazi-ae374.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497470277372:android:d18e55863dbb621dd07979",
+        "android_client_info": {
+          "package_name": "tz.co.nyotaapps.naombakazi.naombakazi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "497470277372-j5mtj6uleeah0515sqaurq9cfi9d271s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk8Tx_-usjDTYn1ODR9X7LieVENAmdnhA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "497470277372-j5mtj6uleeah0515sqaurq9cfi9d271s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

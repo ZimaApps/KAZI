@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:padding="6dp"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/avatarImageViewpp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            fresco:placeholderImageScaleType="centerCrop"
+            fresco:placeholderImage="@drawable/placeholder"
+            fresco:roundAsCircle="true"/>
+
+        <LinearLayout
+            android:id="@+id/readmsj"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/sendername"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:text="Tunu Rashidi"
+                android:textColor="@color/grey_font"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mesejix"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>

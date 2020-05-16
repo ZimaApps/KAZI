@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_weight="1"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        >
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4482019772887748/3803220971">
+    </com.google.android.gms.ads.AdView>
+
+
+
+    <ScrollView
+        android:id="@+id/infoo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:fitsSystemWindows="true">
+
+
+
+            <LinearLayout
+                android:id="@+id/pichajjjj"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+
+
+
+                <!-- To display picture taken -->
+
+                <ImageView
+                    android:id="@+id/imgPreviewzzzz"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+
+
+                    />
+
+                <!-- Videoview to preview recorded video -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/txtPercentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/grey_font"
+                        android:textSize="20dp" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/cappp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/colorPrimary"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:onClick="reselect"
+                            android:text="Chagua picha"
+                            android:textColor="@color/white"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            />
+
+                        <Button
+
+                            android:id="@+id/btnUpload"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/colorPrimary"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:onClick="goback"
+                            android:text="Twende"
+                            android:textColor="@color/white"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>
